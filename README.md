@@ -8,3 +8,11 @@ The project strives to strike a balance between the three aspects:
 1) simple, understandable, flexible, and ultimately hackable code base
 2) high performance, close to if not exceeding state-of-the-art
 3) access to variety and evolving set of numerical methods and algorithms
+
+
+## Benchmarking
+
+Proton:
+```
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-12.6/extras/CUPTI/lib64/ python3 -m triton.profiler.proton matmul.py
+```
